@@ -12,7 +12,6 @@ Promise.all(
     `,
     [user.email, user.hash, user.displayName])
       .then(result => {
-        console.log(result.rows[0]);
         return result.rows[0];
       })
    })
@@ -20,7 +19,6 @@ Promise.all(
   .then(users => {
     return Promise.all(
       list.map(task => {
-        console.log(users[0].id);
         return pool.query(`
         INSERT INTO items (task, user_id)
         VALUES ($1, $2);
