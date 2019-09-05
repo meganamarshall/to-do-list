@@ -1,6 +1,6 @@
-import Component from './Component.js';
-import Header from './Header.js';
-import ToDoForm from './ToDoForm.js';
+import Component from '../components/Component.js';
+import Header from '../components/Header.js';
+import ToDoForm from '../components/ToDoForm.js';
 
 class App extends Component {
   onRender(dom) {
